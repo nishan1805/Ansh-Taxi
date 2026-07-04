@@ -1,0 +1,6 @@
+{
+  "name": "Ansh Taxi Landing Page",
+  "description": "Premium, modern, and high-converting landing page for Ansh Taxi, featuring reliable local, outstation, and airport cab services in India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

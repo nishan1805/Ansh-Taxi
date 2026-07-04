@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans), system-ui, -apple-system, sans-serif;
+
+  --color-primary: #FFC107;
+  --color-primary-dark: #111111;
+  --color-dark-bg: #0F0F10;
+  --color-brand-text: #222222;
+  --color-secondary-text: #6B7280;
+  --color-border-custom: #ECECEC;
+  --color-success: #22C55E;
+
+  --shadow-card: 0 20px 60px rgba(0, 0, 0, 0.08);
+  --shadow-card-dark: 0 20px 60px rgba(0, 0, 0, 0.4);
+  --shadow-btn: 0 10px 30px rgba(255, 193, 7, 0.25);
+  --shadow-btn-hover: 0 15px 40px rgba(255, 193, 7, 0.35);
+
+  --radius-btn: 14px;
+  --radius-card: 20px;
+  --radius-img: 24px;
+  --radius-input: 16px;
+
+  --animate-float: float 4s ease-in-out infinite;
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-fade-in-up: fadeInUp 0.6s ease-out forwards;
+  --animate-road-move: roadMove 10s linear infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes roadMove {
+    from { stroke-dashoffset: 0; }
+    to { stroke-dashoffset: -100; }
+  }
+}
+
+/* Custom Base Utilities */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  body {
+    background-color: #FFFFFF;
+    color: #222222;
+    overflow-x: hidden;
+  }
+}
+
+/* Glassmorphism utility for bento cards */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s ease;
+}
+.glass-panel-hover:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 193, 7, 0.2);
+  box-shadow: 0 20px 40px rgba(255, 193, 7, 0.05);
+}
