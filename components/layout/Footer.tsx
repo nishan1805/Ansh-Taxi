@@ -41,9 +41,9 @@ export default function Footer() {
               <Image
                 src="/images/logo/logo-footer.png"
                 alt="ANSH TAXI"
-                width={120}
-                height={32}
-                className="h-8 w-auto object-contain"
+                width={220}
+                height={60}
+                className="h-14 w-auto object-contain"
               />
             </a>
             <p className="text-[13px] text-neutral-400 leading-relaxed font-medium max-w-[260px] mb-6">
