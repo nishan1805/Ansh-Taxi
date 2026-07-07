@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import Image from 'next/image';
 
 interface HeaderProps {
   onOpenBooking: (carType?: string, destination?: string) => void;
@@ -57,11 +58,14 @@ export default function Header({ onOpenBooking }: HeaderProps) {
         
         {/* Premium Refined Logo */}
         <a href="#hero" className="flex items-center gap-2 group focus:outline-none" id="logo-link">
-          <div className="text-white font-extrabold text-xl flex items-center gap-1.5 tracking-tight">
-            <span className="font-bold tracking-tight text-white transition-colors duration-300">ANSH</span>
-            <span className="text-[#FFC107] font-black">/</span>
-            <span className="text-[#FFC107] font-black tracking-[3px] text-xs uppercase pt-0.5">TAXI</span>
-          </div>
+          <Image
+            src="/images/logo/logo-header.png"
+            alt="ANSH TAXI"
+            width={120}
+            height={32}
+            className="h-8 w-auto object-contain"
+            priority
+          />
         </a>
 
         {/* Center: Desktop Navigation Links */}
