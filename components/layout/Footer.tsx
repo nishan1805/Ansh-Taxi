@@ -38,13 +38,13 @@ export default function Footer() {
           {/* Column 1: Logo, Description & Social Icons */}
           <div id="footer-column-logo" className="flex flex-col items-start">
             <a href="#hero" className="inline-flex items-center gap-1.5 group focus:outline-none mb-5">
-              <Image
-                src="/images/logo/logo-footer.png"
-                alt="ANSH TAXI"
-                width={120}
-                height={32}
-                className="h-8 w-auto object-contain"
-              />
+             <Image
+               src="/images/logo/logo-footer.png"
+               alt="ANSH TAXI"
+               width={260}
+               height={72}
+               className="h-16 w-auto object-contain"
+               />
             </a>
             <p className="text-[13px] text-neutral-400 leading-relaxed font-medium max-w-[260px] mb-6">
               Premium taxi service across Raipur and Chhattisgarh offering local, airport, outstation, and corporate rides with professional drivers.
