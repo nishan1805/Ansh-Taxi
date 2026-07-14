@@ -7,26 +7,26 @@ export const POPULAR_ROUTES: Route[] = [
     to: 'Bilaspur',
     distance: 120,
     time: '2.5 Hours',
-    oneWayFare: 2200,
-    roundTripFare: 4200
+    oneWayFare: 2000,
+    roundTripFare: 4500
   },
   {
     id: 'r2',
     from: 'Raipur',
     to: 'Durg',
-    distance: 40,
+    distance: 50,
     time: '1 Hour',
-    oneWayFare: 1100,
-    roundTripFare: 2000
+    oneWayFare: 1200,
+    roundTripFare: 2400
   },
   {
     id: 'r3',
     from: 'Raipur',
     to: 'Bhilai',
-    distance: 35,
+    distance: 40,
     time: '45 Minutes',
-    oneWayFare: 900,
-    roundTripFare: 1700
+    oneWayFare: 1100,
+    roundTripFare: 2200
   },
   {
     id: 'r4',
@@ -34,8 +34,8 @@ export const POPULAR_ROUTES: Route[] = [
     to: 'Jagdalpur',
     distance: 300,
     time: '6.5 Hours',
-    oneWayFare: 5500,
-    roundTripFare: 10500
+    oneWayFare: 4500,
+    roundTripFare: 9000
   },
   {
     id: 'r5',
